@@ -15,11 +15,12 @@ function helloWorld() {
 //     }else{
 //         return "Hello, Jane!"
 //     }
-}
 
-//Exercise 6 Refactored function:
+
+//Exercise 6 Refactored function: Will return all red since test parameters are different.
 
 function sayHello(input){
     return "Hello, " + input + "!";
 }
 
+sayHello("Alex");
