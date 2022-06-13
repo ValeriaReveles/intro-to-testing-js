@@ -3,10 +3,6 @@ function helloWorld() {
     return "Hello, World!";
 }
 
-// function sayHello(){
-//     return "Hello, Jane!";
-// }
-
 // function sayHello(input){
 //     if (input === "Alex"){
 //         return "Hello, Alex!";
@@ -20,7 +16,16 @@ function helloWorld() {
 //Exercise 6 Refactored function: Will return all red since test parameters are different.
 
 function sayHello(input){
-    return "Hello, " + input + "!";
+    if(input === true){
+        return "Hello, World!";
+    }else if(input){
+        return "Hello, " + input + "!";
+    }else {
+        return "Hello, World!";
+    }
 }
 
-sayHello("Alex");
+
+function isFive(){
+
+}
