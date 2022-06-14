@@ -33,3 +33,12 @@ function isFive(x) {
        return false;
    }
 }
+
+
+function isEven(input){
+    if (input % 2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}

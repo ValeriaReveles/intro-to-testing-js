@@ -30,13 +30,13 @@ describe('sayHello', function(){
     it('should return the string "Hello, Jane!" when executed', function () {
         expect(sayHello("Jane")).toBe("Hello, Jane!");
     });
-    it('should return the string "Hello, World!', function(){
+    it('should return the string "Hello, World!" when executed', function(){
         expect(sayHello()).toBe("Hello, World!");
     });
-    it('should return the string "Hello, World!', function() {
+    it('should return the string "Hello, World!" when executed', function() {
         expect(sayHello(true)).toBe("Hello, World!");
     });
-    it('should return the string "Hello, World!', function() {
+    it('should return the string "Hello, World!" when executed', function() {
         expect(sayHello(false)).toBe("Hello, World!");
     });
 });
@@ -49,8 +49,37 @@ describe('isFive', function() {
     it('should return boolean when called', function() {
         expect(typeof isFive()).toBe("boolean");
     });
-    it('should return boolean value of true when called', function() {
+    it('should return boolean value of true when executed', function() {
         expect(isFive(5)).toBe(true);
+    });
+    it('should return boolean value of true when executed', function() {
+        expect(isFive("5")).toBe(true);
     });
 });
 
+describe('isEven', function() {
+    it('should be a defined function', function () {
+        expect(typeof isEven).toBe('function');
+    });
+    it('should return boolean when called', function() {
+        expect(typeof isEven()).toBe("boolean");
+    });
+    it('should return value of true when executed', function() {
+        expect(isEven(2)).toBe(true);
+    });
+    it('should return value of true when executed', function() {
+        expect(isEven(-4)).toBe(true);
+    });
+    it('should return value of false when executed', function() {
+        expect(isEven(3)).toBe(false);
+    });
+    it('should return value of false when executed', function() {
+        expect(isEven("string")).toBe(false);
+    });
+    it('should return value of false when executed', function() {
+        expect(isEven(Infinity)).toBe(false);
+    });
+    it('should return value of false when executed', function() {
+        expect(isEven()).toBe(false);
+    });
+});
