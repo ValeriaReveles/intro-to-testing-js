@@ -42,3 +42,15 @@ function isEven(input){
         return false;
     }
 }
+
+function isVowel(input){
+    if(input == "a" || "A"){
+        return true;
+    }else if (input == "y"){
+        return false;
+    }else{
+        return false;
+    }
+}
+
+
