@@ -46,5 +46,11 @@ describe('isFive', function() {
     it('should be a defined function', function () {
         expect(typeof isFive).toBe('function');
     });
+    it('should return boolean when called', function() {
+        expect(typeof isFive()).toBe("boolean");
+    });
+    it('should return boolean value of true when called', function() {
+        expect(isFive(5)).toBe(true);
+    });
 });
 
