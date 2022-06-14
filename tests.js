@@ -97,17 +97,22 @@ describe('isVowel', function() {
     });
     it('input a vowel, it should return value of true when executed', function() {
         expect(isVowel("A")).toBe(true);
+     });
+    it('input string, it should return value of false when executed', function() {
+        expect(isVowel("y")).toBe(true);
     });
-    it('input is not a vowel, it should return value of false when executed', function() {
-        expect(isVowel("y")).toBe(false);
+    it('input number, it should return value of false when executed', function() {
+        expect(isVowel(Number)).toBe(true);
     });
-    it('should return value of false when executed', function() {
-        expect(isEven(Number)).toBe("false");
+    it('input undefined, it should return value of false when executed', function() {
+        expect(isVowel()).toBe(true);
     });
-     it('should return value of false when executed', function() {
-        expect(isEven("banana")).toBe("false");
+});
+
+
+describe('addFunction', function() {
+    it('should be a defined function', function () {
+        expect(typeof addFunction).toBe('function');
     });
-    it('should return value of false when executed', function() {
-        expect(isEven()).toBe("false");
-    });
+
 });
