@@ -53,6 +53,12 @@ function isVowel(input){
     }
 }
 
-function addFunction(){
 
+function addFunction(inputOne, inputTwo){
+    let output = inputOne + inputTwo;
+    if(inputOne && inputTwo  === "string"){
+        return "Not a Number";
+    }else {
+        return output;
+    }
 }

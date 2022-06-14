@@ -109,10 +109,20 @@ describe('isVowel', function() {
     });
 });
 
-
 describe('addFunction', function() {
     it('should be a defined function', function () {
         expect(typeof addFunction).toBe('function');
     });
-
+    it('should return the sum of inputs when executed', function() {
+        expect(addFunction(2, 3)).toBe(5);
+    });
+    it('should return the sum of inputs when executed', function() {
+        expect(addFunction(-3, -9)).toBe(-12);
+    });
+    it('should return the sum of inputs when executed', function() {
+        expect(addFunction(5, 6)).toBe(11);
+    });
+    it('should return string "Not a Number" if inputs are strings when executed', function() {
+        expect(addFunction('string', 'string')).toBe("Not a Number");
+    });
 });
